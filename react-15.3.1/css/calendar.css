@@ -1,0 +1,108 @@
+.calendarBorder{
+    width: 400px;
+    height: 510px;
+    border: 2px solid #8dd2dc;
+    border-top: 5px solid #3edc36;
+    border-radius:10px;
+    background-image: url("caledarBkg.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size:40px;
+}
+.headerborder{
+    top:10px;
+    height: 60px;
+    border-bottom: 1px solid #3edc36;
+    text-align: center;
+    position: relative;
+}
+.headerborder p{
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color:#3c3b3b
+}
+.headerborder>p{
+    line-height: 60px;
+    font-size:18px;
+}
+.headerborder p.triangle-left{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 20px;
+    left: 20px;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #3edc36;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+}
+.headerborder p.triangle-right{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 20px;
+    right: 20px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #3edc36;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+}
+.weekday .CalendarDay{
+    display: block;
+}
+.weekday {
+    height: 19px;
+    margin-left: 15px;
+}
+.weekday li{
+    margin-right:1px;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+li{
+    list-style: none;
+    float: left;
+    width: 13%;
+    color: #3c3b3b;
+}
+li:nth-child(7n),li:nth-child(7n+1){
+    color: #a59aa0;
+}
+.CalendarDay li {
+    height: 48px;
+    text-align: center;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.CalendarDay li:hover,li.currentDay{
+    background-color:#67d261;
+    border-radius: 24px;
+    color:#ffffff;
+}
+p.gDate{
+    position: relative;
+    margin:0 0 0 0;
+    font-size:18px;
+    padding-top:8px;
+    line-height:18px;
+}
+p.cDate{
+    position: relative;
+    margin:0 0 0 0;
+    padding-top:2px;
+    font-size:11px;
+}
+p.itgMonth{
+    color:red;
+    text-decoration: underline;
+}
